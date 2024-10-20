@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #61626d;
+  --primary-background-color: #6c71b3;
+  --primary-font: 'Roboto', sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background:url(img/background.JPG);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: clamp(1em,3vh,4em);
+  min-height: 100vh;
+
+  overflow-y: hidden;
+}
+
+input[type=text],button {
+  border: none;
+  background:transparent;
+  backdrop-filter:blur(2px) brightness(75%);
+  font-size: inherit;
+  outline: none;
+  padding: 0.25em;
+}
+button {
+  background-color: lawngreen;
+  border: none;
+  cursor: pointer;
+}
